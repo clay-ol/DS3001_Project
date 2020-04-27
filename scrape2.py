@@ -3,7 +3,7 @@ import csv
 import requests
 import os
 
-filename= os.path.abspath(os.path.dirname(__file__)) + '/chart_scrapes/'
+filename= os.path.abspath(os.path.dirname(__file__)) + '/allData/'
 
 with open('dates_all.csv', newline='') as csvfile:
     dates = csv.reader(csvfile, delimiter=' ')
