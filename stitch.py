@@ -3,12 +3,10 @@ import os
 import csv
 path=os.path.abspath(os.path.dirname(__file__)) + '/allData/'
 dates=[]
-with open('dates_all.csv', newline='') as csvfile:
+with open('Datasets/dates_all.csv', newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter=' ')
     for row in reader:
         dates.append(row)
-
-
 
 #declare the dictionary
 data={}
@@ -39,5 +37,5 @@ for row in range(len(dates)):
 
 
 #save dictionary to json
-with open('dict.json', 'w') as outfile:
+with open('Datasets/dict.json', 'w') as outfile:
    json.dump(data, outfile)

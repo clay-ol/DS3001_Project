@@ -3,11 +3,10 @@ import os
 import csv
 
 
-with open('dict.json', encoding="utf8") as f:
+with open('Datasets/dict.json', encoding="utf8") as f:
     dict=json.load(f)
 
-# flatWriter = csv.writer(open('flat_dict.csv', 'w', newline=''), delimiter=' ', quotechar='|', quoting=csv.QUOTE_MINIMAL)
-flatWriter = csv.writer(open('flat_dict.csv', 'w', newline=''), delimiter=',')
+flatWriter = csv.writer(open('Datasets/flat_dict.csv', 'w', newline=''), delimiter=',')
 for record in dict:
     date=[record][0]
     for song in dict[record]:

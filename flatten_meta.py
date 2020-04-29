@@ -3,16 +3,11 @@ import os
 import csv
 
 
-with open('songMeta.json', encoding="utf8") as f:
+with open('Datasets/songMeta.json', encoding="utf8") as f:
     dict=json.load(f)
 
-# for record in dict:
-#     date=[record][0]
-#     for song in dict[record]:
-#         pos=dict[record][song]['position']
 
-# flatWriter = csv.writer(open('flat_dict.csv', 'w', newline=''), delimiter=' ', quotechar='|', quoting=csv.QUOTE_MINIMAL)
-flatWriter = csv.writer(open('flat_meta.csv', 'w', newline=''), delimiter=',')
+flatWriter = csv.writer(open('Datasets/flat_meta.csv', 'w', newline=''), delimiter=',')
 for record in dict:
     track_ref=[record][0]
     danceability=dict[record]['danceability']
