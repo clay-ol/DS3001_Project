@@ -35,28 +35,32 @@ spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(cl
 # tempo
 # duration_ms
 
-metaList = []
+# metaList = []
 urlLists = []
+metaList = {}
+
 
 with open('unique_songs.json', encoding="utf8") as f:
     dict=json.load(f)
 
 urltempList = list( dict.keys() )
-#print( urltempList )
+
 x = 0
 y = len( urltempList )
-# print( y )
-for i in range(x, y,100):
-    # x=i
-    # print( i )
-    # print (urltempList[x:x+100] )   
-    trackMetas = spotify.audio_features( urltempList[x:x+100] )
-    metaList.append( trackMetas )   
-# for list in urlLists:
+
+# for i in range(x, y, 100):
 #     # takes in a comma delimited list of IDs up to 100 IDs
-#     trackMetas = spotify.audio_features( list )
+#     trackMetas = spotify.audio_features( urltempList[x:x+100] )
 #     metaList.append( trackMetas )
-# print( metaList )
+#     x+=100   
+for i in range(x, y,100):
+    # print( i )
+    # print (urltempList[x:x+100] )
+    trackMetas = spotify.audio_features( urltempList[x:x+100] )
+    for row in range(len(trackMetas)):
+        metaList[urltempList[x+row]]=trackMetas[row]
+    x+=100
+
 
 # write song meta data to a json for further use
 with open( 'songMeta.json', 'w' ) as outfile:
