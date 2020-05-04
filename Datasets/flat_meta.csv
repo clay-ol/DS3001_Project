@@ -1,3 +1,4 @@
+track_ref,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,type,id,uri,analysis_url,duration_ms,time_signature
 https://open.spotify.com/track/5aAx2yezTd8zXrkmtKl66Z,0.681,0.594,7,-7.028,1,0.282,0.165,3.49e-06,0.134,0.535,186.054,audio_features,5aAx2yezTd8zXrkmtKl66Z,spotify:track:5aAx2yezTd8zXrkmtKl66Z,https://api.spotify.com/v1/audio-analysis/5aAx2yezTd8zXrkmtKl66Z,230453,4
 https://open.spotify.com/track/7BKLCZ1jbUBVqRi2FVlTVw,0.748,0.524,8,-5.599,1,0.0338,0.414,0,0.111,0.661,95.01,audio_features,7BKLCZ1jbUBVqRi2FVlTVw,spotify:track:7BKLCZ1jbUBVqRi2FVlTVw,https://api.spotify.com/v1/audio-analysis/7BKLCZ1jbUBVqRi2FVlTVw,244960,4
 https://open.spotify.com/track/4pdPtRcBmOSQDlJ3Fk945m,0.476,0.718,8,-5.309,1,0.0576,0.0784,1.02e-05,0.122,0.142,199.864,audio_features,4pdPtRcBmOSQDlJ3Fk945m,spotify:track:4pdPtRcBmOSQDlJ3Fk945m,https://api.spotify.com/v1/audio-analysis/4pdPtRcBmOSQDlJ3Fk945m,205947,4
